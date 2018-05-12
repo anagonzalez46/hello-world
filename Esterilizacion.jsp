@@ -112,5 +112,3 @@
     </body>
 </html>
 
-<!--La neta mis ideas estan más cool--> 
-
