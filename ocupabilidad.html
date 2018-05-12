@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WU / Ocupabilidad de Horario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo1.css"/>
+        <link type="text/css" rel="stylesheet" href="CSS/materialize.css">
+        <link rel="shortcut icon" href="img/icono.png">
+    </head>
+    <body>
+        <!-- Barra superior 
+        <div class="barrasuperior">
+          <div class="barra">
+            <a href="principal.html" class="opcion"><b>WU</b> Servicios de Salud</a>
+            <!-- Float links to the right. Hide them on small screens 
+            <div class="derecha">
+                <a href="#about" class="opcion">Nosotros</a>
+                <a href="#about" class="opcion">Emergencias</a>
+                <a href="#" class="opcion">Hospitales</a>
+                <a href="#" class="opcion">Material</a>
+                <a href="#" class="opcion">Especialistas</a>
+                <a href="#projects" class="opcion">Ocupabilidad</a>
+                <a href="#contact" class="opcion">Contáctanos</a>
+            </div>
+          </div>
+        </div> -->
+        <nav class="menu">
+                
+                <ul>
+                    <li class="actual"><a href="index.jsp"> Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="Emergencias.jsp">Emergencias</a>
+                        <ul>
+                            <li><a href="generarEmergencia.jsp">Generar Emergencia</a></li>
+                            <li><a href="EmergenciasActuales.jsp#cont31">Emergencias Actuales</a></li>
+                        </ul>   
+                    </li>  
+                    <li><a href="Hospitales.jsp">Hospitales</a>
+                        <ul>
+                            <li><a href="DesplegarHos.jsp">Desplegar Hospitales</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="MaterialFaltante.jsp">Material</a>
+                        <ul>
+                            <li><a href="registrarMatFalt.jsp">Registra Material Faltante</a></li>
+                            <li><a href="registrarMatSob.jsp">Registra Material Sobrante</a></li>
+                            <li><a href="despliegaF.jsp">Material Faltante</a></li>
+                            <li><a href="despliegaS.jsp">Material Sobrante</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="Especialistas.jsp">Especialistas</a>
+                        <ul>
+                            <li><a href="Especialistas.jsp">Solicitud de Especialistas</a></li>
+                            <li><a href="registrarEspecialista.jsp">Registrar Especialistas</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="ocupabilidad.html">Ocupabilidad de horario</a>
+                        <ul>
+                            <li><a href="#">Opcion 1</a></li>
+                            <li><a href="#">Opcion 2</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="salir.jsp">Salir</a></li>
+
+                </ul>
+            </nav>
+        <!-- Header -->
+        <header class="contenido" id="home">
+            <img class="imagen" src="img/fondo.png" alt="Hospital" width="1500" height="800">
+            <div class="posicion">
+                <h1 class="letratitulo"><span class="title"><b>OCUPABILIDAD</b></span> <br> <span class="subtitulo">DE HORARIO</span></h1>
+            </div>
+        </header>
+
+        <!-- Contenido -->
+        <div class="pagina" style="max-width:1564px">
+
+            <!-- Áreas -->
+            <div class="areas" id="projects">
+                <div class="bordes"></div>
+            </div>
+
+            <form>
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Urgencias</div>
+                            <input type="image" src="img/urgencias.jpg" alt="Urgencias" style="width:100%" formaction="Urgencias.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Médico General</div>
+                            <input type="image" src="img/mgeneral.jpg" alt="Medicina general" style="width:100%" formaction="Mgeneral.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Medicina Preventiva</div>
+                            <input type="image" src="img/mpreventiva.jpg" alt="Medicina preventiva" style="width:100%" formaction="Mpreventiva.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Hospitalización</div>
+                            <input type="image" src="img/hospitalizacion.jpg" alt="Pediatria" style="width:100%" formaction="Hospitalizacion.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Odontología</div>
+                            <input type="image" src="img/odontologia.jpg" alt="Odontologia" style="width:99%" formaction="Odontologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Laboratorio</div>
+                            <input type="image" src="img/laboratorio.jpg" alt="Laboratorio" style="width:99%" formaction="Laboratorio.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Ginecología</div>
+                            <input type="image" src="img/ginecologia.jpg" alt="House" style="width:99%" formaction="Ginecologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Terapia intensiva</div>
+                            <input type="image" src="img/terapia.jpg" alt="House" style="width:99%" formaction="Terapia.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Quirófano</div>
+                            <input type="image" src="img/quirofano.jpg" alt="House" style="width:100%" formaction="Quirofano.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Cardiología</div>
+                            <input type="image" src="img/cardiologia.jpg" alt="House" style="width:100%" formaction="Cardiologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Hematología</div>
+                            <input type="image" src="img/hematologia.jpg" alt="House" style="width:100%" formaction="Hematologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Neumología</div>
+                            <input type="image" src="img/neumologia.jpg" alt="House" style="width:100%" formaction="Neumologia.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Oncología</div>
+                            <input type="image" src="img/oncologia.jpg" alt="House" style="width:99%" formaction="Oncologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Dermatología</div>
+                            <input type="image" src="img/dermatologia.jpg" alt="House" style="width:99%" formaction="Dermatologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Oftalmología</div>
+                            <input type="image" src="img/oftalmologia.jpg" alt="House" style="width:99%" formaction="Oftalmologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Otorringolaringología</div>
+                            <input type="image" src="img/otorrinolaringologia.jpg" alt="House" style="width:99%" formaction="Otorrinolaringologia.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Urología</div>
+                            <input type="image" src="img/urologia.jpg" alt="House" style="width:99%" formaction="Urologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Radiología</div>
+                            <input type="image" src="img/radiologia.jpg" alt="House" style="width:99%" formaction="Radiologia.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Rehabilitación</div>
+                            <input type="image" src="img/rehabilitacion.jpg" alt="House" style="width:99%" formaction="Rehabilitacion.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Farmacia</div>
+                            <input type="image" src="img/farmacia.jpg" alt="House" style="width:99%" formaction="Farmacia.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Dirección</div>
+                            <input type="image" src="img/dir.jpg" alt="Dirección" style="width:99%" formaction="Direccion.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Subdirección</div>
+                            <input type="image" src="img/subdir.jpg" alt="Subdireccion" style="width:99%" formaction="Subdireccion.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Finanzas</div>
+                            <input type="image" src="img/finanzas.jpg" alt="Finanzas" style="width:99%" formaction="Finanzas.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Pediatria</div>
+                            <input type="image" src="img/pediatria.jpg" alt="House" style="width:99%" formaction="Pediatria.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Centro de esterilización</div>
+                            <input type="image" src="img/esterilizacion.jpg" alt="Centro de esterilización" style="width:99%" formaction="Esterilizacion.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Nutrición</div>
+                            <input type="image" src="img/nutricion.jpg" alt="House" style="width:99%" formaction="Nutricion.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Enfermeria</div>
+                            <input type="image" src="img/enfermeria.jpg" alt="House" style="width:99%" formaction="Enfermeria.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Camilleria</div>
+                            <input type="image" src="img/camillero.jpg" alt="House" style="width:99%" formaction="Camilleria.jsp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filaespaciada">
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Maternidad</div>
+                            <input type="image" src="img/maternidad.png" alt="House" style="width:99%" formaction="Maternidad.jsp">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="cuadro">
+                            <div class="nombre">Trabajo social</div>
+                            <input type="image" src="img/trabajos.jpg" alt="Trabajosocial" style="width:99%" formaction="Trabajos.jsp">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer class="pie">
+          <p>Powered by <a title="What U Need" target="_blank" class="color"> WUN </a></p>
+        </footer>
+    </body>
+</html>
